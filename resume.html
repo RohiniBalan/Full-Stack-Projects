@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      .square {
+        height: 1300px;
+        width: 850px;
+        margin-left: 230px;
+        background-color: white;
+        border: 1px solid grey;
+      }
+      .square1 {
+        height: 1300px;
+        width: 300px;
+        margin-left: 230px;
+        position: absolute;
+        top: 8px;
+        background-color: rgba(255, 160, 122, 0.658);
+      }
+      .square2 {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        margin-left: 280px;
+      }
+      .rohini {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        position: absolute;
+        top: 50px;
+        margin-left: 280px;
+      }
+      .contact {
+        position: absolute;
+        top: 270px;
+        margin-left: 325px;
+      }
+      hr {
+        position: absolute;
+        top: 320px;
+        margin-left: 250px;
+        border: 1px solid rgba(0, 0, 0, 0.74);
+        width: 259px;
+      }
+      .phone {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 360px;
+        margin-left: 256px;
+      }
+      .phonenum {
+        position: absolute;
+        top: 336px;
+        margin-left: 304px;
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .mail {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 400px;
+        margin-left: 256px;
+      }
+      .mailid {
+        position: absolute;
+        top: 374px;
+        margin-left: 302px;
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .location {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 440px;
+        margin-left: 256px;
+      }
+      .location1 {
+        position: absolute;
+        top: 419px;
+        margin-left: 302px;
+        font-size: 19px;
+        font-weight: normal;
+      }
+      .skill {
+        position: absolute;
+        top: 535px;
+        margin-left: 325px;
+      }
+      .hr1 {
+        position: absolute;
+        top: 585px;
+        margin-left: 250px;
+        border: 1px solid rgba(0, 0, 0, 0.74);
+        width: 259px;
+      }
+      .skill1 {
+        position: absolute;
+        top: 570px;
+        margin-left: 260px;
+        font-size: 19px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+      .activities {
+        position: absolute;
+        top: 740px;
+        margin-left: 280px;
+      }
+      .hr2 {
+        position: absolute;
+        top: 820px;
+        margin-left: 250px;
+        border: 1px solid rgba(0, 0, 0, 0.74);
+        width: 259px;
+      }
+      .activities1 {
+        position: absolute;
+        top: 810px;
+        margin-left: 260px;
+        font-size: 19px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+      .language {
+        position: absolute;
+        top: 980px;
+        margin-left: 260px;
+      }
+      .hr3 {
+        position: absolute;
+        top: 1030px;
+        margin-left: 250px;
+        border: 1px solid rgba(0, 0, 0, 0.74);
+        width: 259px;
+      }
+      .language1 {
+        position: absolute;
+        top: 1020px;
+        margin-left: 260px;
+        font-size: 19px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+      .interest {
+        position: absolute;
+        top: 1120px;
+        margin-left: 260px;
+      }
+      .hr4 {
+        position: absolute;
+        top: 1170px;
+        margin-left: 250px;
+        border: 1px solid rgba(0, 0, 0, 0.74);
+        width: 259px;
+      }
+      .interest1 {
+        position: absolute;
+        top: 1160px;
+        margin-left: 260px;
+        font-size: 19px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+      .name {
+        margin-left: 590px;
+        position: absolute;
+        top: 80px;
+        font-size: 44px;
+        color: lightsalmon;
+      }
+      .student {
+        margin-left: 590px;
+        position: absolute;
+        top: 136px;
+        font-size: 25px;
+        font-weight: normal;
+        color: lightsalmon;
+      }
+      .objective {
+        margin-left: 590px;
+        position: absolute;
+        top: 270px;
+        font-size: 25px;
+        background-color: lightgray;
+        width: 450px;
+      }
+      .objective1 {
+        margin-left: 590px;
+        position: absolute;
+        top: 320px;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 26px;
+      }
+      .education {
+        margin-left: 590px;
+        position: absolute;
+        top: 440px;
+        font-size: 25px;
+        background-color: lightgray;
+        width: 450px;
+      }
+      .education1 {
+        position: absolute;
+        top: 490px;
+        margin-left: 590px;
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .internship {
+        margin-left: 590px;
+        position: absolute;
+        top: 910px;
+        font-size: 25px;
+        background-color: lightgray;
+        width: 450px;
+      }
+      .internship1 {
+        position: absolute;
+        top: 960px;
+        margin-left: 590px;
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .project {
+        margin-left: 590px;
+        position: absolute;
+        top: 1120px;
+        font-size: 25px;
+        background-color: lightgray;
+        width: 450px;
+      }
+      .project1 {
+        position: absolute;
+        top: 1160px;
+        margin-left: 590px;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body id="container">
+    <div class="square"></div>
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <img src="brohini.png" class="rohini" />
+    <h2 class="contact">CONTACT</h2>
+    <hr />
+    <img src="call-outline.svg" class="phone" />
+    <h4 class="phonenum">8056704459</h4>
+    <img src="mail-open-outline.svg" class="mail" />
+    <h4 class="mailid">rohinibalan529@gmail.com</h4>
+    <img src="location-outline.svg" class="location" />
+    <h4 class="location1">
+      3/143A Sirukinathu palayam, <br />Periyasoli palayam (Pt),
+      <br />P.Velur(Tk), <br />Namakkal (Dt).
+    </h4>
+    <h2 class="skill">SKILLS</h2>
+    <hr class="hr1" />
+    <h4 class="skill1">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java Script (Basics)</li>
+        <li>Python (Basics)</li>
+      </ul>
+    </h4>
+    <h2 class="activities">CO CURRICULAR <br />ACTIVITIES</h2>
+    <hr /class="hr2">
+    <h4 class="activities1">
+      <ul>
+        <li>
+          I had done paper presentation <br />
+          in other colleges.
+        </li>
+        <li>I had attended workshop in <br />inter and intra colleges.</li>
+      </ul>
+    </h4>
+
+    <h2 class="language">LANGUAGES KNOWN</h2>
+    <hr class="hr3" />
+    <h4 class="language1">
+      <ul>
+        <li>Tamil</li>
+        <li>English</li>
+      </ul>
+      <h2 class="interest">AREA OF INTEREST</h2><hr class="hr4">
+    <h4 class="interest1">
+      <ul>
+        <li>Web Developer</li>
+        <li>Full Stack Developer</li>
+      </ul>
+    </h4>
+    <h1 class="name">ROHINI BALAN</h1>
+    <h4 class="student">College Student</h4>
+    <h2 class="objective">OBJECTIVE</h2>
+    <h4 class="objective1">
+      To obtain a challenging position in my dream company <br />
+      to expand mu experience and skills and work towards <br />
+      the overall growth of the organisation.
+    </h4>
+    <h2 class="education">EDUCATION</h2>
+    <h4 class="education1">
+      <b
+        >Bachelor degree in Sri Shanmugha College of <br />
+        Enginnering and Technology (2021 - 2025)</b
+      >
+      <ul>
+        <li>B. Tech IT (3rd Year)</li>
+        <li>8.13 CGPA</li>
+      </ul>
+      <b
+        >Government Higher Srcondary School, <br />
+        Kabilar malai (2019 - 2021)</b
+      >
+      <ul>
+        <li>HSC</li>
+        <li>523 (87%)</li>
+      </ul>
+      <b
+        >Government Higher Srcondary School, <br />
+        Kabilar malai (2014 - 2019)</b
+      >
+      <ul>
+        <li>SSLC</li>
+        <li>422 (84%)</li>
+      </ul>
+    </h4>
+    <h2 class="internship">INTERNSHIP</h2>
+    <h4 class="internship1">
+      <b
+        >IDM TECH PARK <br />
+        www.idmtechpark.com</b
+      >
+      <ul>
+        <li>
+          I had completed my internship on Web Designing <br />
+          using HTML, CSS and JavaScript.
+        </li>
+      </ul>
+    </h4>
+    <h2 class="project">PROJECT</h2> <hr>
+    <h4 class="project1"><ul><li>Currently, I am doing a project in <q> App Free <br> Online Meeting platform</q>.</li></ul></h4>
+  </body>
+</html>
