@@ -69,7 +69,7 @@
       function convert() {
         let mass = Number(document.getElementById("input1").value);
         let height = Number(document.getElementById("input2").value);
-        let BMIval = mass / (height * 2);
+        let BMIval = mass / (height * height);
         let convert = document.getElementById("result");
         convert.innerHTML = BMIval.toFixed(3);
       }
