@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(247, 247, 187);
+        height: 637px;
+        font-family: sans-serif;
+      }
+      .container {
+        background-color: blue;
+        border: 3px solid brown;
+        border-radius: 10px;
+        height: 360px;
+        width: 1100px;
+      }
+      #btn {
+        height: 25px;
+        width: 100px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      #result {
+        height: 28px;
+        width: 75px;
+        box-shadow: 2px 2px 2px 2px red;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: blue;
+      }
+      h1 {
+        color: white;
+        font-size: 40px;
+        padding-top: 20px;
+      }
+      .text {
+        color: white;
+        font-size: 22px;
+      }
+      input {
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Body Mass Index</h1>
+      <br />
+      <div>
+        <label for="h" class="text">Mass Value</label>
+        <input type="text" id="input1" /> <br /><br />
+        <label for="h" class="text">Height value</label>
+        <input type="text" id="input2" /><br /><br />
+      </div>
+      <div><button id="btn" onclick="convert()">Click Here</button><br /></div>
+      <br />
+      <div><button id="result" class="styl"></button></div>
+    </div>
+    <script>
+      function convert() {
+        let mass = Number(document.getElementById("input1").value);
+        let height = Number(document.getElementById("input2").value);
+        let BMIval = mass / (height * 2);
+        let convert = document.getElementById("result");
+        convert.innerHTML = BMIval.toFixed(3);
+      }
+    </script>
+  </body>
+</html>
