@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: rgba(243, 243, 243, 0.795);
+      }
+      #text {
+        border: 2px solid gray;
+        border-radius: 7px;
+        font-size: 18px;
+      }
+      #text:hover {
+        border: 2px solid black;
+      }
+      #char {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Counter</h1>
+    <form>
+      <textarea
+        name="text"
+        id="text"
+        cols="30"
+        rows="5"
+        placeholder="Type your text here..."
+      ></textarea>
+      <p><span id="char">0</span> Characters</p>
+    </form>
+    <script>
+      let text = document.getElementById("text");
+      let char = document.getElementById("char");
+      text.addEventListener("input", function () {
+        let content = this.value;
+        char.textContent = content.length;
+        console.log(content);
+      });
+    </script>
+  </body>
+</html>
