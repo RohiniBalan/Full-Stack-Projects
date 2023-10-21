@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+      .container {
+        background-color: cornsilk;
+        height: 700px;
+      }
+      .image {
+        height: 45px;
+        width: 200px;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+      }
+      .image:hover{
+        border: 8px solid orange;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a:hover {
+        color: red;
+      }
+      .a1 {
+        position: absolute;
+        right: 600px;
+        top: 20px;
+      }
+      .a2 {
+        position: absolute;
+        right: 500px;
+        top: 20px;
+      }
+      .a3 {
+        position: absolute;
+        right: 350px;
+        top: 20px;
+      }
+      .a4 {
+        position: absolute;
+        right: 250px;
+        top: 20px;
+      }
+      .button {
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        position: absolute;
+        right: 90px;
+        font-size: 20px;
+        background-color: orange;
+        top: 20px;
+        height: 40px;
+      }
+      .button:hover{
+        background-color:saddlebrown;
+      }
+      #img1 {
+        height: 450px;
+        width: 450px;
+        left: 770px;
+        top: 130px;
+        position: absolute;
+      }
+      .heading {
+        font-size: 60px;
+        top: 130px;
+        left: 40px;
+        position: absolute;
+        line-height: 57px;
+      }
+      .para {
+        font-size: 25px;
+        top: 350px;
+        left: 40px;
+        position: absolute;
+        line-height: 35px;
+        color: gray;
+      }
+      .btn1 {
+        top: 500px;
+        left: 40px;
+        position: absolute;
+        background-color: orange;
+        border-radius: 7px;
+        font-size: 20px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        border:none;
+      }
+      .btn2 {
+        top: 500px;
+        left: 250px;
+        position: absolute;
+        border-radius: 7px;
+        font-size: 20px;
+        height: 40px;
+        font-weight: bold;
+        border: none;
+        background-color: white;
+      }
+      .cus1 {
+        height: 50px;
+        width: 50px;
+        top: 600px;
+        left: 40px;
+        position: absolute;
+        border-radius: 25px;
+      }
+      .cus2 {
+        height: 50px;
+        width: 50px;
+        top: 600px;
+        left: 70px;
+        position: absolute;
+        border-radius: 25px;
+      }
+      .cus3 {
+        height: 50px;
+        width: 50px;
+        top: 600px;
+        left: 100px;
+        position: absolute;
+        border-radius: 25px;
+      }
+      .cus4 {
+        height: 50px;
+        width: 50px;
+        top: 600px;
+        left: 130px;
+        position: absolute;
+        border-radius: 25px;
+      }
+      .cus5 {
+        height: 50px;
+        width: 50px;
+        top: 600px;
+        left: 160px;
+        position: absolute;
+        border-radius: 25px;
+      }
+      .cus6 {
+        height: 50px;
+        width: 50px;
+        top: 600px;
+        left: 190px;
+        position: absolute;
+        border-radius: 25px;
+      }
+      b {
+        color: rgb(196, 36, 8);
+      }
+      .para1 {
+        font-size: 22px;
+        top: 590px;
+        left: 270px;
+        position: absolute;
+        font-weight: bold;
+      }
+      h3 {
+        text-align: center;
+        color: grey;
+        padding-top: 30px;
+        font-size: 23px;
+      }
+      .img2 {
+        position: absolute;
+        top: 830px;
+        left: 130px;
+        height: 50px;
+        width: 150px;
+      }
+      .img3 {
+        position: absolute;
+        top: 830px;
+        left: 350px;
+        height: 50px;
+        width: 150px;
+      }
+      .img4 {
+        position: absolute;
+        top: 830px;
+        left: 600px;
+        height: 50px;
+        width: 150px;
+      }
+      .img5 {
+        position: absolute;
+        top: 830px;
+        left: 850px;
+        height: 50px;
+        width: 150px;
+      }
+      .img6 {
+        position: absolute;
+        top: 830px;
+        left: 1100px;
+        height: 50px;
+        width: 150px;
+      }
+      .work {
+        color: brown;
+        position: absolute;
+        top: 890px;
+        left: 100px;
+      }
+      .pg1 {
+        font-size: 48px;
+        position: absolute;
+        top: 950px;
+        left: 100px;
+        font-weight: bold;
+      }
+      .num1 {
+        color: lightgray;
+        font-size: 100px;
+        position: absolute;
+        top: 1080px;
+        left: 100px;
+        font-weight: bold;
+      }
+      .tell {
+        font-size: 35px;
+        position: absolute;
+        top: 1270px;
+        left: 100px;
+        font-weight: bold;
+      }
+      .para3 {
+        position: absolute;
+        top: 1350px;
+        left: 100px;
+        font-size: 22px;
+        color: grey;
+      }
+      .square {
+        height: 330px;
+        width: 330px;
+        background-color: rgba(250, 235, 215, 0.705);
+        top: 1200px;
+        right: 180px;
+        position: absolute;
+        border-radius: 195px;
+      }
+      .square1 {
+        height: 250px;
+        width: 250px;
+        background-color: rgba(255, 228, 196, 0.699);
+        top: 1240px;
+        right: 220px;
+        position: absolute;
+        border-radius: 140px;
+      }
+      .img7 {
+        height: 385px;
+        width: 180px;
+        top: 1170px;
+        left: 915px;
+        position: absolute;
+      }
+      .square2 {
+        height: 330px;
+        width: 330px;
+        background-color: rgba(250, 235, 215, 0.705);
+        top: 1750px;
+        left: 200px;
+        position: absolute;
+        border-radius: 195px;
+      }
+      .square3 {
+        height: 250px;
+        width: 250px;
+        background-color: rgba(255, 228, 196, 0.699);
+        top: 1790px;
+        left: 240px;
+        position: absolute;
+        border-radius: 140px;
+      }
+      .img8 {
+        height: 385px;
+        width: 180px;
+        top: 1720px;
+        left: 275px;
+        position: absolute;
+      }
+      .num2 {
+        color: lightgray;
+        font-size: 100px;
+        position: absolute;
+        top: 1580px;
+        left: 750px;
+        font-weight: bold;
+      }
+      .plan {
+        font-size: 35px;
+        position: absolute;
+        top: 1760px;
+        left: 750px;
+        font-weight: bold;
+      }
+      .para4 {
+        position: absolute;
+        top: 1840px;
+        left: 750px;
+        font-size: 22px;
+        color: grey;
+      }
+      .num3 {
+        color: lightgray;
+        font-size: 100px;
+        position: absolute;
+        top: 2110px;
+        left: 100px;
+        font-weight: bold;
+      }
+      .receive {
+        font-size: 35px;
+        position: absolute;
+        top: 2290px;
+        left: 100px;
+        font-weight: bold;
+      }
+      .para5 {
+        position: absolute;
+        top: 2370px;
+        left: 100px;
+        font-size: 22px;
+        color: grey;
+      }
+      .square4 {
+        height: 330px;
+        width: 330px;
+        background-color: rgba(250, 235, 215, 0.705);
+        top: 2200px;
+        right: 180px;
+        position: absolute;
+        border-radius: 195px;
+      }
+      .square5 {
+        height: 250px;
+        width: 250px;
+        background-color: rgba(255, 228, 196, 0.699);
+        top: 2240px;
+        right: 220px;
+        position: absolute;
+        border-radius: 140px;
+      }
+      .img9 {
+        height: 385px;
+        width: 180px;
+        top: 2170px;
+        left: 915px;
+        position: absolute;
+      }
+      .meals{
+        color: brown;
+        text-align: center;
+        padding-top: 1950px;
+        
+      }
+      .ai{
+        font-size: 46px;
+        text-align: center;
+      }
+      .square6{
+        height:530px;
+        width: 330px;
+        background-color:beige;
+        position: absolute;
+        top: 2980px;
+        left:100px;
+        border-radius: 20px;
+        transition: 4s;
+      }
+      .img10{
+        height: 230px;
+        width: 330px;
+        position: absolute;
+        top: 2980px;
+        left:100px;
+        border-top-left-radius: 20px ;
+        border-top-right-radius: 20px; 
+      }
+      .square7{
+        height: 25px;
+        width: 110px;
+        background-color: rgba(20, 190, 20, 0.575);
+        position: absolute;
+        left: 150px ;
+        top: 3250px;
+        border-radius: 15px;
+      }
+      .veg{
+        position: absolute;
+        left: 160px;
+        top: 3235px;
+        font-weight: bold;
+      }
+      .japanese{
+        position: absolute;
+        top: 3260px;
+        left: 150px;
+      }
+      .fire1{
+        position: absolute;
+        left:150px;
+        top: 3330px;
+        font-size: 22px;
+      }
+      .calory1{
+        position: absolute;
+        left:200px;
+        top: 3305px;
+        color: rgb(0,0,0,0.87);
+        font-weight: normal;
+      }
+      .knife1{
+        position: absolute;
+        left: 150px;
+        top: 3374px;
+        font-size: 22px;
+      }
+      .score1{
+        position: absolute;
+        left: 200px;
+        top: 3350px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .star1{
+        position: absolute;
+        left: 146px;
+        top: 3400px;
+        font-size: 34px;
+        color: orange;
+      }
+      .rate1{
+        position: absolute;
+        left: 200px;
+        top: 3395px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .square8{
+        height:530px;
+        width: 330px;
+        background-color:beige;
+        position: absolute;
+        top: 2980px;
+        left:490px;
+        border-radius: 20px;
+      }
+      .img11{
+        height: 230px;
+        width: 330px;
+        position: absolute;
+        top: 2980px;
+        left:490px;
+        border-top-left-radius: 20px ;
+        border-top-right-radius: 20px;
+      }
+      .square9{
+        height: 25px;
+        width: 70px;
+        background-color: rgba(20, 190, 20, 0.575);
+        position: absolute;
+        left: 540px ;
+        top: 3250px;
+        border-radius: 15px;
+      }
+      .vegan{
+        position: absolute;
+        left: 550px;
+        top: 3235px;
+        font-weight: bold;
+      }
+      .square10{
+        height: 25px;
+        width: 70px;
+        background-color: yellow;
+        position: absolute;
+        left: 620px ;
+        top: 3250px;
+        border-radius: 15px;
+      }
+      .paleo{
+        position: absolute;
+        left: 633px;
+        top: 3233px;
+        font-weight: bold;
+      }
+      .salad{
+        position: absolute;
+        top: 3260px;
+        left: 540px;
+      }
+      .fire2{
+        position: absolute;
+        left:540px;
+        top: 3330px;
+        font-size: 22px;
+      }
+      .calory2{
+        position: absolute;
+        left:590px;
+        top: 3305px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .knife2{
+        position: absolute;
+        left: 540px;
+        top: 3374px;
+        font-size: 22px;
+      }
+      .score2{
+        position: absolute;
+        left: 590px;
+        top: 3350px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .star2{
+        position: absolute;
+        left: 536px;
+        top: 3400px;
+        font-size: 34px;
+        color: orange;
+      }
+      .rate2{
+        position: absolute;
+        left: 590px;
+        top: 3395px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .diet{
+        position: absolute;
+        top: 2960px;
+        right: 180px;
+        font-weight: bolder;
+      }
+      .tick1{
+        color: orange;
+        position: absolute;
+        top: 3030px;
+        right: 430px;
+      }
+      .veg1{
+        position: absolute;
+        top: 3045px;
+        right: 300px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick2{
+        color: orange;
+        position: absolute;
+        top: 3075px;
+        right: 430px;
+      }
+      .vegan1{
+        position: absolute;
+        top: 3090px;
+        right: 342px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick3{
+        color: orange;
+        position: absolute;
+        top: 3120px;
+        right: 430px;
+      }
+      .pescatarian{
+        position: absolute;
+        top: 3135px;
+        right: 290px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick4{
+        color: orange;
+        position: absolute;
+        top: 3165px;
+        right: 430px;
+      }
+      .gluten-free{
+        position: absolute;
+        top: 3180px;
+        right: 290px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick5{
+        color: orange;
+        position: absolute;
+        top: 3210px;
+        right: 430px;
+      }
+      .lactose-free{
+        position: absolute;
+        top: 3224px;
+        right: 280px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick6{
+        color: orange;
+        position: absolute;
+        top: 3255px;
+        right: 430px;
+      }
+      .keto{
+        position: absolute;
+        top: 3268px;
+        right: 350px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick7{
+        color: orange;
+        position: absolute;
+        top: 3300px;
+        right: 430px;
+      }
+      .paleo1{
+        position: absolute;
+        top: 3314px;
+        right: 345px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick8{
+        color: orange;
+        position: absolute;
+        top: 3345px;
+        right: 430px;
+      }
+      .fodmap{
+        position: absolute;
+        top: 3360px;
+        right: 248px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .tick9{
+        color: orange;
+        position: absolute;
+        top: 3390px;
+        right: 430px;
+      }
+      .kid{
+        position: absolute;
+        top: 3400px;
+        right: 278px;
+        word-spacing: 20px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: normal;
+      }
+      .see{
+        position: absolute;
+        top: 3550px;
+        color: orangered;
+        left:600px ;
+        text-decoration: underline;
+      }
+      .testimonials{
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        color: brown;
+      }
+      .try{
+        font-size: 46px;
+        position: absolute;
+        top: 110px;
+        left: 100px;
+      }
+      .dave{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        position: absolute;
+        top: 350px;
+        left: 100px;
+      }
+      .dave1 {
+        font-size: 20px;
+        top: 410px;
+        left: 100px;
+        position: absolute;
+        line-height: 35px;
+        color: gray;
+      }
+      .ben{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        position: absolute;
+        top: 350px;
+        left: 410px;
+      }
+      .ben1 {
+        font-size: 20px;
+        top: 410px;
+        left: 410px;
+        position: absolute;
+        line-height: 35px;
+        color: gray;
+      }
+      .steve{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        position: absolute;
+        top: 690px;
+        left: 100px;
+      }
+      .steve1 {
+        font-size: 20px;
+        top: 750px;
+        left: 100px;
+        position: absolute;
+        line-height: 35px;
+        color: gray;
+      }
+      .hannah{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        position: absolute;
+        top: 690px;
+        left: 410px;
+      }
+      .hannah1 {
+        font-size: 20px;
+        top: 750px;
+        left: 410px;
+        position: absolute;
+        line-height: 35px;
+        color: gray;
+      }
+      .gallery1{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 144px;
+        left: 718px;
+        transition: transform .2s;
+      }
+      .gallery1:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery4{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 350px;
+        left: 718px;
+        transition: transform .2s;
+      }
+      .gallery4:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery7{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 556px;
+        left: 718px;
+        transition: transform .2s;
+      }
+      .gallery7:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery10{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 764px;
+        left: 718px;
+        transition: transform .2s;
+      }
+      .gallery10:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery2{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 144px;
+        left: 924px;
+        transition: transform .2s;
+      }
+      .gallery2:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery5{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 350px;
+        left: 924px;
+        transition: transform .2s;
+      }
+      .gallery5:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery8{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 556px;
+        left: 924px;
+        transition: transform .2s;
+      }
+      .gallery8:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery11{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 764px;
+        left: 924px;
+        transition: transform .2s;
+      }
+      .gallery11:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery3{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top:144px;
+        left: 1130px;
+        transition: transform .2s;
+      }
+      .gallery3:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery6{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 350px;
+        left: 1130px;
+        transition: transform .2s;
+      }
+      .gallery6:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery9{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 556px;
+        left: 1130px;
+        transition: transform .2s;
+      }
+      .gallery9:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .gallery12{
+        height: 190px;
+        width: 190px;
+        position: absolute;
+        top: 764px;
+        left: 1130px;
+        transition: transform .2s;
+      }
+      .gallery12:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .testpage{
+        background-color: antiquewhite;
+        height: 1070px;
+        width: 100%;
+        position:absolute;
+        top:3700px;
+      }
+      .price{
+        position: absolute;
+        top: 4870px;
+        left: 100px;
+        color: brown;
+        font-weight: bold;
+      }
+      .bank{
+        position:absolute;
+        top: 4910px;
+        left: 100px;
+        font-size: 47px;
+        font-weight: bold;
+      }
+      .square11{
+        height:530px;
+        width: 380px;
+        position: absolute;
+        top: 5100px;
+        left: 250px;
+        border-radius: 20px;
+        border: 2px solid antiquewhite;
+      }
+      .square12{
+        height: 530px;
+        width: 380px;
+        position: absolute;
+        top: 5100px;
+        right: 250px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+      }
+      .starter{
+        color: brown;
+        position:absolute;
+        top:5110px;
+        left:380px;
+      }
+      .complete{
+        color: brown;
+        position:absolute;
+        top:5110px;
+        right:380px;
+      }
+      .dolor1{
+        position:absolute;
+        top: 5185px;
+        left:370px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .amt1{
+        position: absolute;
+        top: 5160px;
+        left: 410px;
+        font-size: 62px;
+        font-weight: bold;
+      }
+      .dolor2{
+        position:absolute;
+        top: 5185px;
+        right:490px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .amt2{
+        position: absolute;
+        top: 5160px;
+        right: 370px;
+        font-size: 62px;
+        font-weight: bold;
+      }
+      .month1{
+        position: absolute;
+        top: 5250px;
+        left: 300px;
+        font-size: 20px;
+        color: gray;
+        font-weight: normal;
+      }
+      .month2{
+        position: absolute;
+        top: 5250px;
+        right: 300px;
+        font-size: 20px;
+        color: gray;
+        font-weight: normal;
+      }
+      .tick10{
+        position: absolute;
+        top: 5320px;
+        left: 300px;
+        color: orange;
+      }
+      .day1{
+        position: absolute;
+        top: 5290px;
+        left:340px ;
+        color: gray;
+        font-weight: normal;
+      }
+      .order1{
+        position: absolute;
+        top: 5345px;
+        left:340px ;
+        color: gray;
+        font-weight: normal;
+      }
+      .delivery1{
+        position: absolute;
+        top: 5398px;
+        left:340px ;
+        color: gray;
+        font-weight: normal;
+      }
+      .tick11{
+        position: absolute;
+        top: 5320px;
+        right: 560px;
+        color: orange;
+      }
+      .day2{
+        position: absolute;
+        top: 5290px;
+        right: 400px;
+        color: gray;
+        font-weight: normal;
+      }
+      .order2{
+        position: absolute;
+        top: 5345px;
+        right:438px ;
+        color: gray;
+        font-weight: normal;
+      }
+      .delivery2{
+        position: absolute;
+        top: 5398px;
+        right:398px ;
+        color: gray;
+        font-weight: normal;
+      }
+      .access{
+        position: absolute;
+        top: 5447px;
+        right:297px ;
+        color: gray;
+        font-weight: normal;
+      }
+      .btn3{
+        top: 5570px;
+        left: 340px;
+        position: absolute;
+        background-color: orange;
+        border-radius: 10px;
+        font-size: 20px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        border:none;
+        width: 200px;
+      }
+      .btn4 {
+        top: 5570px;
+        right: 340px;
+        position: absolute;
+        background-color: orange;
+        border-radius: 10px;
+        font-size: 20px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        border:none;
+        width: 200px;
+      }
+      .time{
+        position: absolute;
+        top: 5660px;
+        left: 330px;
+        color: gray;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      .icon{
+        position: absolute;
+        top: 5790px;
+        left: 120px;
+        height: 60px;
+        width: 60px;
+      }
+      .icon1{
+        position: absolute;
+        top: 5860px;
+        left:120px;
+        font-weight: bold;
+        color: black;
+      }
+      .icon2{
+        position: absolute;
+        left: 120px;
+        top: 5918px;
+        color: gray;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .apple{
+        position: absolute;
+        top: 5784px;
+        left: 430px;
+        height: 80px;
+        width: 80px;
+      }
+      .apple1{
+         position: absolute;
+         top: 5860px;
+         left:430px;
+         font-weight: bold;
+      }
+      .apple2{
+        position: absolute;
+        left: 430px;
+        top: 5918px;
+        color: gray;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .leaf{
+        position:absolute;
+        top: 5784px;
+        left: 740px;
+        height: 80px;
+        width: 80px;  
+      }
+      .leaf1{
+        position: absolute;
+        top: 5860px;
+        left:740px;
+        font-weight: bold;
+      }
+      .leaf2{
+        position: absolute;
+        left: 740px;
+        top: 5918px;
+        color: gray;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .logo1{
+        position:absolute;
+        top: 5784px;
+        left: 1030px;
+        height: 80px;
+        width: 80px;  
+      }
+      .logo2{
+        position: absolute;
+        top: 5860px;
+        left:1030px;
+        font-weight: bold;
+      }
+      .logo3{
+        position: absolute;
+        left: 1030px;
+        top: 5918px;
+        color: gray;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .square13{
+        height:500px;
+        width: 1150px;
+        background-color:rgb(235, 162, 74);
+        position: absolute;
+        top: 6200px;
+        left: 100px;
+        border-radius: 15px;
+      }
+      .free{
+        position: absolute;
+        top: 6220px;
+        left: 160px;
+        font-size: 44px;
+      }
+      .freemeals{
+        position: absolute;
+        top: 6315px;
+        left: 160px;
+        font-size: 22px;
+      }
+      .name{
+        position: absolute;
+        top:6430px;
+        left: 160px;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .name1{
+        position: absolute;
+        top: 6470px;
+        left: 160px;
+        height: 55px;
+        width: 280px;
+        border-radius: 10px;
+        font-size: 22px;
+        border: none;
+      }
+      .email{
+        position: absolute;
+        top:6430px;
+        left: 490px;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .email1{
+        position: absolute;
+        top: 6470px;
+        left: 490px;
+        height: 55px;
+        width: 280px;
+        border-radius: 10px;
+        font-size: 22px;
+        border: none;
+      }
+      .hear{
+        position: absolute;
+        top:6550px;
+        left: 160px;
+        font-weight: bold;
+        font-size: 19px;
+      }
+      .select{
+        position: absolute;
+        top: 6590px;
+        left: 160px;
+        height:40px;
+        width: 280px;
+        border-radius: 10px;
+        font-size: 20px;
+        border: none;
+        color: gray;
+      }
+      .signup{
+        position: absolute;
+        top:6580px;
+        left: 490px;
+        background-color:rgb(94, 44, 8);
+        height: 55px;
+        width: 280px;
+        border-radius: 10px;
+        font-size: 22px;
+        border: none;
+        color: white;
+        font-weight: bold;
+      }
+      .signup:hover{
+         background-color: white;
+         color: gray;
+      }
+      .eating{
+        height:500px;
+        width: 380px;
+        position: absolute;
+        top: 6200px;
+        left: 870px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      .omnifood{
+        height:30px;
+        width: 180px;
+        position:absolute;
+        top: 6940px;
+        left: 100px;
+      }
+      .omnifood:hover{
+        border: 6px solid orange;
+      }
+      .insta{
+        width:35px;
+        height:35px;
+        position:absolute;
+        top: 7010px;
+        left: 100px;
+      }
+      .facebook{
+        width:35px;
+        height:35px;
+        position:absolute;
+        top: 7010px;
+        left: 180px;
+      }
+      .twitter{        
+        width:35px;
+        height:35px;
+        position:absolute;
+        top: 7010px;
+        left: 260px;
+      }
+      .right{
+        position: absolute;
+        top: 7080px;
+        left: 100px;
+        color: gray;
+      }
+      .contact{
+        position: absolute;
+        top:6920px;
+        left: 400px;
+        color: gray;
+      }
+      .street{
+        position: absolute;
+        top:6990px;
+        left: 400px;
+        color: gray;
+        font-size: 18px;
+      }
+      .mobile{
+        position: absolute;
+        top: 7080px;
+        left: 400px;
+        color: gray;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      .account{
+        position: absolute;
+        top:6920px;
+        left: 700px;
+        color: gray;
+      }
+      .create{
+        position: absolute;
+        top:6990px;
+        left: 700px;
+        color: gray;
+        font-size: 18px;
+      }
+      .company{
+        position: absolute;
+        top:6920px;
+        left: 900px;
+        color: gray;
+      }
+      .about{
+        position: absolute;
+        top:6990px;
+        left: 900px;
+        color: gray;
+        font-size: 18px;
+      }
+      .resource{
+        position: absolute;
+        top:6920px;
+        left: 1130px;
+        color: gray;
+      }
+      .help{
+        position: absolute;
+        top:6990px;
+        left: 1130px;
+        color: gray;
+        font-size: 18px;
+      }
+      hr{
+        width: 100%; 
+        border: 1px solid lightgrey;
+        position: absolute;
+        top: 6830px;
+      }
+      #link1{
+        color: gray;
+        font-size: 18px;
+      }
+      #link2{
+        color: gray;
+        font-size: 18px;
+      }
+      #link3{
+        color: gray;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="omnifood-logo.png" / class="image">
+      <a href="#" class="a1">How it works</a>
+      <a href="#" class="a2">Meals</a>
+      <a href="#" class="a3">Testimonials</a>
+      <a href="#" class="a4">Pricing</a>
+      <input type="button" value="Try for free" class="button" />
+      <img src="hero.png" id="img1" />
+      <h1 class="heading">
+        A healthy meal <br />delivered to your door,<br />
+        every single day
+      </h1>
+      <p class="para">
+        The smart 365-days-per-year food subscription that will <br />
+        make you eat healthy again. Tailored to your personal tastes <br />
+        and nutritional needs.
+      </p>
+      <input type="button" value="Start eating well" class="btn1" />
+      <input type="button" value="Learn more &#8595" class="btn2" />
+      <img src="customer-1.jpg" class="cus1" />
+      <img src="customer-2.jpg" class="cus2" />
+      <img src="customer-3.jpg" class="cus3" />
+      <img src="customer-4.jpg" class="cus4" />
+      <img src="customer-5.jpg" class="cus5" />
+      <img src="customer-6.jpg" class="cus6" />
+      <p class="para1"><b>250,000+</b>meals delivered last year!</p>
+    </div>
+      <h3>AS FEATURED IN</h3>
+      <img src="techcrunch.png" class="img2" />
+      <img src="business-insider.png" class="img3" />
+      <img src="the-new-york-times.png" class="img4" />
+      <img src="forbes.png" class="img5" />
+      <img src="usa-today.png" class="img6" />
+      <h3 class="work">HOW IT WORKS</h3>
+      <h1 class="pg1">Your daily dose of health in 3 simple steps</h1>
+      <p class="num1">01</p>
+      <h2 class="tell">Tell us what you like (and what not)</h2>
+      <p class="para3">
+        Never again waste time thinking about what to eat! Omnifood AI <br />
+        will create a 100% personalized weekly meal plan just for you. It <br />
+        makes sure you get all the nutrients and vitamins you need, no
+        <br />matter what diet you follow!
+      </p>
+      <div class="square"></div>
+      <div class="square1"></div>
+      <img src="app-screen-1.png" class="img7" />
+      <div class="square2"></div>
+      <div class="square3"></div>
+      <img src="app-screen-2.png" class="img8" />
+      <p class="num2">02</p>
+      <h2 class="plan">Approve your weekly meal plan</h2>
+      <p class="para4">
+        Once per week, approve the meal plan generated for you by <br />Omnifood
+        AI. You can change ingredients, swap entire meals, or <br />
+        even add your own recipes.
+      </p>
+      <p class="num3">03</p>
+      <h2 class="receive">Receive meals at convenient time</h2>
+      <p class="para5">
+        Best chefs in town will cook your selected meal every day, and <br />
+        we will deliver it to your door whenever works best for you. You <br />
+        can change delivery schedule and address daily!
+      </p>
+      <div class="square4"></div>
+      <div class="square5"></div>
+      <img src="app-screen-3.png" class="img9" />
+      <h3 class="meals">Meals</h3>
+      <h1 class="ai">Omnifood AI chooses from 5,000+ recipes</h1>
+      <div class="square6"></div>
+      <img src="meal-1.jpg" class="img10">
+      <div class="square7"></div>
+      <h5 class="veg">VEGETARIAN</h5>
+      <h1 class="japanese">Japanese Gyozas</h1>
+      <div class="square8"></div>
+      <img src="meal-2.jpg" class="img11">
+      <div class="square9"></div>
+      <h5 class="vegan">VEGAN</h5>
+      <div class="square10"></div>
+      <h5 class="paleo">PALEO</h5>
+      <h1 class="salad">Avocado Salad</h1>
+      <p class="fire1">&#128293</p>
+      <h3 class="calory1">650 calories</h3>
+      <p class="fire2">&#128293</p>
+      <h3 class="calory2">400 calories</h3>
+      <p class="knife1">&#127860</p>
+      <h3 class="score1">NutriScore ® 74</h3>
+      <p class="knife2">&#127860</p>
+      <h3 class="score2">NutriScore ® 92</h3>
+      <p class="star1">&#9733</p>
+      <h3 class="rate1">4.9 rating (537)</h3>
+      <p class="star2">&#9733</p>
+      <h3 class="rate2">4.8 rating (441)</h3>
+      <h1 class="diet">Works with any diet:</h1>
+      <h1 class="tick1">&#x2713 </h1>
+      <h2 class="veg1">Vegetarian</h2>/
+      <h1 class="tick2">&#x2713</h1>
+      <h2 class="vegan1">Vegan</h2>
+      <h1 class="tick3">&#x2713</h1>
+      <h2 class="pescatarian">Pescatarian</h2>
+      <h1 class="tick4">&#x2713</h1>
+      <h2 class="gluten-free">Gluten-free</h2>
+      <h1 class="tick5">&#x2713</h1>
+      <h2 class="lactose-free">Lactose-free</h2>
+      <h1 class="tick6">&#x2713</h1>
+      <h2 class="keto">Keto</h2>
+      <h1 class="tick7">&#x2713</h1>
+      <h2 class="paleo1">Paleo</h2>
+      <h1 class="tick8">&#x2713</h1>
+      <h2 class="fodmap">Low FODMAP</h2>
+      <h1 class="tick9">&#x2713</h1>
+      <h2 class="kid">Kid-friendly</h2>
+      <a href="#" class="see">See all recipes &#8594</a>
+      <div class="testpage">
+      <h4 class="testimonials">TESTIMONIALS</h4>
+      <h1 class="try">Once you try it, you can't <br>go back</h1>
+      <img src="dave.jpg" class="dave">
+      <p class="dave1">Inexpensive, healthy and <br>great-tasting meals,<br> without even having to <br> order manually! It feels truly <br> magical. <br>
+        — Dave Bryson</p>
+        <img src="ben.jpg" class="ben">
+        <p class="ben1">The AI algorithm is crazy <br> good, it chooses the right <br>meals for me every 
+          time. It's <br> amazing not to worry about <br> food anymore! <br>
+          — Ben Hadley</p>
+          <img src="steve.jpg" class="steve">
+          <p class="steve1">Omnifood is a life saver! I <br> just started a company, so <br>there's no time for cooking. <br>I couldn't live without my <br>daily meals now! <br>
+            — Steve Miller</p>
+          <img src="hannah.jpg" class="hannah">
+          <p class="hannah1">I got Omnifood for the <br>
+            whole family, and it frees up <br> so much time! Plus, <br>everything is organic and <br>vegan and without plastic. <br>
+            — Hannah Smith</p>
+              <img src="gallery-1.jpg" class="gallery1">
+              <img src="gallery-2.jpg" class="gallery2">
+              <img src="gallery-3.jpg" class="gallery3">
+              <img src="gallery-4.jpg" class="gallery4">
+              <img src="gallery-5.jpg" class="gallery5">
+              <img src="gallery-6.jpg" class="gallery6">
+              <img src="gallery-7.jpg" class="gallery7">
+              <img src="gallery-8.jpg" class="gallery8">
+              <img src="gallery-9.jpg" class="gallery9">
+              <img src="gallery-10.jpg" class="gallery10">
+              <img src="gallery-11.jpg" class="gallery11">
+              <img src="gallery-12.jpg" class="gallery12">        
+      </div>
+      <h4 class="price">PRICING</h4>
+      <h1 class="bank">Eating well without breaking the bank</h1>
+      <div class="square11"></div>
+      <h3 class="starter">STARTER</h3>
+      <p class="dolor1">$</p>
+      <h1 class="amt1">399</h1>
+      <h4 class="month1">per month. That's just $13 per meal!</h4>
+      <div class="tick10">
+        <h2>&#x2713</h2>
+        <h2>&#x2713</h2>
+        <h2>&#x2713</h2>
+        <h2>&#10005</h2>
+      </div>
+      <h3 class="day1">1 meal per day</h3>
+      <h3 class="order1">Order from 11am to 9pm</h3>
+      <h3 class="delivery1">Delivery is free</h3>
+      <input type="button" value="Start eating well" class="btn3">
+      <div class="square12"></div>
+      <h3 class="complete">COMPLETE</h3>
+      <p class="dolor2">$</p>
+      <h1 class="amt2">649</h1>
+      <h4 class="month2">per month. That's just $11 per meal!</h4>
+      <div class="tick11">
+        <h2>&#x2713</h2>
+        <h2>&#x2713</h2>
+        <h2>&#x2713</h2>
+        <h2>&#x2713</h2>
+      </div>
+      <h3 class="day2">2 meal per day</h3>
+      <h3 class="order2">Order 24/7</h3>
+      <h3 class="delivery2">Delivery is free</h3>
+      <h3 class="access">Get access to latest recipes</h3>
+      <input type="button" value="Start eating well" class="btn4">
+      <h4 class="time">Prices include all applicable taxes. You can cancel at any time. Both plans include the following:</h4>
+      <img src="favicon.png" class="icon">
+      <h1 class="icon1">Never cook again!</h1>
+      <p class="icon2">Our subscriptions cover 365 <br>days per year, even <br>including major holidays.</p>
+      <img src="apple-logo.jpg" class="apple">
+      <h1 class="apple1">Local and organic</h1>
+      <p class="apple2">Our cooks only use local, <br>fresh, and organic products <br>to prepare your meals.</p>
+      <img src="leaf-logo.jpg" class="leaf">
+      <h1 class="leaf1">No waste</h1>
+      <p class="leaf2">All our partners only use <br>reusable containers to <br> package all your meals.</p>
+      <img src="logo.jpg" class="logo1">
+      <h1 class="logo2">Pause anytime</h1>
+      <p class="logo3">Going on vacation? Just <br> pause your subscription,<br> and we refund unused days.
+      </p>
+      <div class="square13"></div>
+      <h1 class="free">Get your first meal for free!</h1>
+      <p class="freemeals">Healthy, tasty and hassle-free meals are waiting for you. Start eating well <br>today. You can cancel or pause anytime. And the first meal is on us!</p>
+      <form>
+      <label for="h" class="name">Full Name</label><br>
+      <input type="text" placeholder="John Smith" class="name1">
+      <label for="h" class="email">Email address</label><br>
+      <input type="email" placeholder="me@example.com" class="email1">
+      <label for="h" class="hear">Where did you hear from us?</label><br>
+      <select class="select">
+        <option value="Please choose one option:">Please choose one option:</option>
+        <option value="Friends and Family">Friends and Family</option>
+        <option value="Youtube video">Youtube video</option>
+        <option value="Podcast">Podcast</option>
+        <option value="Facebook ad">Facebook ad</option>
+        <option value="Others">Others</option>
+      </select>
+      <input type="button" value="Sign up now" class="signup">
+    </form>
+      <img src="eating.jpg" class="eating">
+      <hr>
+      <img src="omnifood-logo.png" class="omnifood">
+      <img src="logo-instagram.svg" class="insta">
+      <img src="logo-facebook.svg" class="facebook">
+      <img src="logo-twitter.svg" class="twitter">
+      <p class="right">Copyright © 2023 by Omnifood, <br> Inc. All rights reserved.</p>
+    <h2 class="contact">Contact us</h2>
+    <p class="street">623 Harrison St., 2nd Floor,<br> San Francisco, CA 94107</p>
+    <a href="#">
+   <p class="mobile">415-201-6370 <br>hello@omnifood.com</p>  
+  </a>
+   <h2 class="account">Account</h2>
+   <div class="create">
+    <a href="#" id="link1">
+   <p>Create account</p>
+   <p>Sign in</p>
+   <p>iOs app</p>
+   <p>Android app</p>
+  </a>
+  </div>
+  <h2 class="company">Company</h2>
+  <div class="about">
+    <a href="#" id="link2">
+   <p>About Omnifood</p>
+   <p>For Business</p>
+   <p>Cooking partners</p>
+   <p>Careers</p>
+  </a>
+  </div>
+  <h2 class="resource">Resources</h2>
+  <div class="help">
+    <a href="#" id="link3">
+    <p>Recipe directory</p>
+    <p>Help center</p>
+    <p>Privacy and terms</p>
+  </a>
+  </div>
+  </body>
+</html>
