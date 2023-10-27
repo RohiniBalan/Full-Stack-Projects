@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form {
+        width: 400px;
+        margin-left: 450px;
+        margin-top: 50px;
+        background-color: pink;
+        border-radius: 5px;
+        padding: 30px;
+      }
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input {
+        width: 84%;
+      }
+      h1 {
+        color: blueviolet;
+        text-align: center;
+      }
+
+      #form button {
+        background-color: lightgreen;
+        color: blueviolet;
+        cursor: pointer;
+        width: 90%;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 7px;
+        border-color: purple;
+      }
+      input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+      }
+      .input-group input {
+        border-radius: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 10px;
+      }
+      .input-group input:focus {
+        outline: 0;
+      }
+      .input-group .error {
+        color: red;
+        margin-top: 5px;
+      }
+      .input-group .success input {
+        border-color: green;
+      }
+      .input-group .error input {
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h1>Register</h1>
+        <div class="input-group">
+          <label for="username">UserName</label><br />
+          <input type="text" id="username" /><br />
+          <br />
+          <div class="error"></div>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label><br />
+          <input type="email" id="email" placeholder="abc@gmail.com" /><br />
+          <br />
+          <div class="error"></div>
+        </div>
+        <div class="input-group">
+          <label for="password">password</label><br />
+          <input type="password" id="password" /><br /><br />
+          <div class="error"></div>
+        </div>
+        <div class="input-group">
+          <label for="confirm">Confirm Password</label><br />
+          <input type="password" id="confirm" /><br /><br />
+          <div class="error"></div>
+        </div>
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      const form = document.querySelector("#form");
+      const username = document.querySelector("#username");
+      const email = document.querySelector("#email");
+      const password = document.querySelector("#password");
+      const confirm = document.querySelector("#confirm");
+      form.addEventListener("submit", (e) => {
+        if (!validateInputs()) {
+          e.preventDefault();
+        }
+      });
+      function validateInputs() {
+        const usernameVal = username.value.trim();
+        const emailVal = email.value.trim();
+        const passwordVal = password.value.trim();
+        const confirmVal = confirm.value.trim();
+        let success = true;
+        if (usernameVal === "") {
+          setError(username, "Username is required");
+          success = false;
+        } else {
+          setSuccess(username);
+        }
+        if (emailVal === "") {
+          setError(email, "Email is required");
+          sucess = false;
+        } else if (!validateEmails(emailVal)) {
+          setError(email, "Please enter valid Emails");
+          sucess = false;
+        } else {
+          setSuccess(email);
+        }
+        if (passwordVal === "") {
+          setError(password, "Password is required");
+          success = false;
+        } else if (passwordVal.length < 8) {
+          setError(password, "Password must be atleast 8 character");
+          success = false;
+        } else {
+          setSuccess(password);
+        }
+        if (confirmVal === "") {
+          setError(confirm, "Confirm Password is required");
+          success = false;
+        } else if (confirmdVal !== passwordVal) {
+          setError(confirm, "Password does not match");
+          success = false;
+        } else {
+          setSuccess(confirm);
+        }
+        return success;
+      }
+      function setError(element, message) {
+        const inputGroup = element.parentElement;
+        const errorElement = inputGroup.querySelector(".error");
+        errorElement.innerText = message;
+        inputGroup.classList.add("error");
+        inputGroup.classList.remove("success");
+      }
+      function setSuccess(element) {
+        const inputGroup = element.parentElement;
+        const errorElement = inputGroup.querySelector(".error");
+        errorElement.innerText = "";
+        inputGroup.classList.add("success");
+        inputGroup.classList.remove("error");
+      }
+      const validateEmail = (email) => {
+        return String(email)
+          .toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          );
+      };
+    </script>
+  </body>
+</html>
