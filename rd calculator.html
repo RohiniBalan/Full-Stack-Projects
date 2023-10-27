@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rosybrown;
+        border: 1px solid white;
+        width: 400px;
+        padding-left: 20px;
+        height: 380px;
+      }
+      input {
+        height: 27px;
+        width: 300px;
+      }
+      button {
+        background-color: rgb(0, 162, 255);
+        color: white;
+        height: 30px;
+        width: 100px;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        margin-left: 480px;
+        margin-top: 150px;
+        background-color: rgb(219, 213, 219);
+      }
+      label {
+        font-size: 18px;
+      }
+      #result {
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RD Calculator</h1>
+      <label for="principalAmt">Principal Amount(Rs):</label><br />
+      <input
+        type="number"
+        id="amount"
+        placeholder="Enter the Principal amount"
+      /><br /><br />
+      <label for="interestRate">Interest Rate(%):</label><br />
+      <input
+        type="number"
+        id="interest"
+        placeholder="Enter the annual interest rate"
+      /><br /><br />
+      <label for="time">Time (months):</label><br />
+      <input
+        type="number"
+        id="months"
+        placeholder="Enter the number of months"
+      /><br /><br />
+      <button onclick="calculate()">Calculate</button>
+      <p id="result"></p>
+    </div>
+    <script>
+      function calculate() {
+        var principalAmt = parseFloat(document.getElementById("amount").value);
+        var interestRate = parseFloat(
+          document.getElementById("interest").value
+        );
+        var time = parseInt(document.getElementById("months").value);
+        var monthlyRate = interestRate / 12 / 100;
+        var maturityAmount =
+          principalAmt * ((Math.pow(1 + monthlyRate, time) - 1) / monthlyRate);
+        document.getElementById("result").innerHTML =
+          "Total Amount:" + maturityAmount.toFixed(2);
+      }
+    </script>
+  </body>
+</html>
