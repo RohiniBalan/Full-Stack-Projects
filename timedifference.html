@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: mediumaquamarine;
+        text-align: center;
+        padding-top: 100px;
+      }
+      label {
+        font-size: 20px;
+      }
+      input {
+        height: 25px;
+        width: 240px;
+      }
+      #btn {
+        height: 35px;
+        width: 150px;
+        background-color: rgb(56, 49, 49);
+        color: white;
+        font-size: 17px;
+      }
+      #result {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Time Calculation</h1>
+    <div class="input-container">
+      <label for="start-time">Start Time</label> <br />
+      <input type="time" id="time1" /><br /><br />
+    </div>
+    <div class="input-container">
+      <label for="end-time">End Time</label><br />
+      <input type="time" id="time2" /><br /><br />
+    </div>
+    <button onclick="calculate()" id="btn">Calculate</button> <br />
+    <p id="result"></p>
+    <script>
+      function calculate() {
+        const startTime = document.getElementById("time1").value;
+        const endTime = document.getElementById("time2").value;
+        if (startTime && endTime) {
+          const [startHour, startMinute] = startTime.split(":");
+          const [endHour, endMinute] = endTime.split(":");
+          const start = new Date(0, 0, 0, startHour, startMinute);
+          const end = new Date(0, 0, 0, endHour, endMinute);
+          if (end >= start) {
+            const timeDifference = new Date(end - start);
+            const hours = timeDifference.getUTCHours();
+            const minutes = timeDifference.getUTCMinutes();
+            document.getElementById(
+              "result"
+            ).innerText = `Time difference: ${hours} hours and ${minutes} minutes`;
+          } else {
+            document.getElementById("result").innerText =
+              "End time should be later than start time.";
+          }
+        } else {
+          document.getElementById("result").innerText =
+            "Please enter valid start and end times.";
+        }
+      }
+    </script>
+  </body>
+</html>
